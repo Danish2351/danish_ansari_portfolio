@@ -1,0 +1,238 @@
+/* Basic Reset */
+@font-face {
+  font-family: "Megafield";
+  src: url("fonts/Megafield-Italic.ttf") format("truetype");
+  font-weight: 400; 
+  font-weight: normal;
+}
+@font-face {
+  font-family: "NexaBold";
+  src: url("fonts/NexaBold.otf") format("truetype");
+  font-weight: 400; 
+  font-weight: normal;
+}
+@font-face {
+  font-family: "NexaLight";
+  src: url("fonts/NexaLight.otf") format("truetype");
+  font-weight: 400; 
+  font-weight: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #0a1a33; /* Navy blue */
+  color: #e6e6e6;      /* soft white text */
+  line-height: 1.6;
+}
+
+/* Navbar centered */
+.navbar {
+    width: 100%;
+    display: flex;
+    justify-content: center; /* center the nav links */
+    gap: 25px; /* space between links */
+    padding: 20px 0;
+    position: fixed; /* fix at top */
+    top: -20px;
+    left: 0;
+    background: #0b1a31; /* same as header background */
+    border-bottom: 1px solid #16335c;
+    z-index: 1000;
+}
+
+.navbar .logo {
+    font-family: "NexaBold", sans-serif;
+    font-size: 1.5rem;
+    color: #ffffff;
+}
+
+.nav-links a {
+    color: #7fb3ff;
+    text-decoration: none;
+    margin-left: 25px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+/* Push content down so it doesn't go under navbar */
+header {
+    padding-top: 120px; /* adjust according to navbar height */
+}
+
+/* Header */
+/* Push content down so it doesn't go under navbar */
+header {
+    text-align: center;
+    padding-top: 100px; /* adjust for navbar height */
+}
+
+/* Header Text */
+header h1 {
+  font-size: 3rem;       /* increased */
+  color: #ffffff;
+  margin-bottom: 5px;
+}
+
+/* Subtitle */
+.subtitle {
+    color: #d1e0ff;
+    font-size: 1.6rem;
+    font-weight: 500;
+}
+
+header h1 {
+    font-family: "NexaBold";
+    font-size: 2.5rem;
+    font-weight: 500;
+}
+
+.subtitle {
+  color: #ffc400;
+}
+
+nav {
+  margin-top: 20px;
+}
+
+/* Navigation */
+.navbar a {
+    color: #7fb3ff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.navbar a:hover {
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+/* Card background update */
+section, .project-card, .skills-grid li {
+  background: #112240; /* darker navy container */
+  border: 1px solid #16335c;
+  border-radius: 6px;
+  padding: 20px;
+  color: #e6e6e6;
+}
+
+/* Layout */
+.container {
+  width: 90%;
+  max-width: 900px;
+  margin: 50px auto;
+}
+
+section {
+  margin-bottom: 60px;
+}
+
+h2 {
+  margin-bottom: 15px;
+  font-size: 1.6rem;
+  color: #7fb3ff;
+}
+
+/* Container for image + punchline */
+/* Punchline */
+.punchline {
+    font-family: "Megafield", sans-serif;
+    font-size: 3.5rem;
+    font-weight: normal;
+    color: #ffffff;
+    max-width: 1100px;
+    margin: 20px auto -120px;
+}
+
+/* Profile Image */
+.profile-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: -95px;
+}
+
+/* Image styling */
+.profile-img {
+    width: 760px;
+    height: auto;
+    object-fit: contain;
+}
+
+
+
+/* Skills */
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 10px;
+  list-style: none;
+}
+
+.skills-grid li {
+  background: #16335c;
+  padding: 10px;
+  border: 1px solid #16335c;
+  text-align: center;
+  border-radius: 5px;
+  font-size: 0.9rem;
+}
+
+/* Projects */
+.project-card {
+  background: #16335c;
+  padding: 20px;
+  border: 1px solid #16335c;
+  border-radius: 6px;
+  margin-bottom: 25px;
+}
+
+.project-card a {
+  display: inline-block;
+  margin-top: 10px;
+  color: #0073e6;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+#contact .skills-grid img {
+    width: 28px;
+    height: 28px;
+    object-fit: contain;
+    filter: brightness(0) invert(1); /* makes icons white on dark bg */
+    transition: 0.2s ease-in-out;
+}
+
+#contact .skills-grid img:hover {
+    transform: scale(1.15);
+    opacity: 0.85;
+}
+
+/* Experience */
+.exp-item {
+  margin-bottom: 20px;
+}
+
+.meta {
+  color: #777;
+  font-size: 0.9rem;
+}
+
+/* Footer */
+footer {
+  background: #0a1a33;
+  border-top: 1px solid #16335c;
+  color: #88aadd;
+  padding: 40px;
+  text-align: center;
+}
